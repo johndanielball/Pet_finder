@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  width: 70%;
+}
+
+.content {
+  width: 100%;
+  text-align: center;
+}
