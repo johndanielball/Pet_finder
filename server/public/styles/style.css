@@ -1,3 +1,7 @@
+body {
+  background: -webkit-linear-gradient(left, rgba(192,181,238,1) 0%, rgba(67,42,229,1) 90%, rgba(199,190,239,1) 100%);
+}
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -5,10 +9,26 @@
 }
 
 .container {
-  width: 70%;
+  color: navajowhite;
 }
 
 .content {
   width: 100%;
   text-align: center;
+}
+
+button {
+  background-color: black;
+  color: white;
+}
+
+img {
+  border: double 4px;
+}
+
+#copy {
+  color: red;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  padding: 50px;
 }

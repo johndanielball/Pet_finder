@@ -6,26 +6,27 @@
     <link rel="stylesheet" href="/vendors/bootstrap.min.css" />
     <link rel="stylesheet" href="/styles/style.css" />
 
-    <script type="text/javascript" src="/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="/vendors/angular.js"></script>
     <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
     <script type="text/javascript" src="/scripts/app.js"></script>
-    <script type="text/javascript" src="/scripts/controllers/birds.js"></script>
-    <script type="text/javascript" src="/scripts/controllers/cats.js"></script>
-    <script type="text/javascript" src="/scripts/controllers/dogs.js"></script>
-
-
+    <script type="text/javascript" src="/scripts/controllers/home.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/pet.js"></script>
+    <script type="text/javascript" src="/scripts/controllers/favorite.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="menu">
-          <div class="menu-item"><a href="#cats">Loving Cat's</a></div>
-          <div class="menu-item"><a href="#dogs">Friendly dogs</a></div>
-          <div class="menu-item"><a href="#birds">Wonderful birds</a></div>
-        </div>
-        <div class="content" ng-view>
+    <div class="container" ng-controller="HomeController">
+      <div>
+        <label for="pets">Pets:&nbsp;&nbsp;</label>
+        <select id="pets" ng-model="selectedPet" ng-change="petChanged()" ng-options="pet.type as pet.name for pet in petTypes">
+        </select>
+        <button><a ng-href="#favorite">Favorites</a></button>
+        <label>{{favoriteCnt}}</label>
+      </div>
+      <div class="content" ng-view>
 
-        </div>
-
+      </div>
     </div>
+    <div id="copy">&copy; 1995 graphics</div>
 </body>
 </html>

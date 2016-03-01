@@ -1,0 +1,9 @@
+CREATE TABLE public.favorite
+(
+  id integer NOT NULL,
+  type character varying(25),
+  name character varying(50),
+  photourl character varying(100),
+  description character varying(100),
+  CONSTRAINT id_primary PRIMARY KEY (id)
+)

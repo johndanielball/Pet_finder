@@ -1,0 +1,7 @@
+<div>
+  <div><label>Type:&nbsp;&nbsp;</label>{{petType}}</div>
+  <img src="{{animal.photo.$t}}"/>
+  <button ng-show="!isFavorite" ng-click="addToFavorites()">Add To Favorites</button>
+  <div><label>Name:&nbsp;&nbsp;</label>{{animal.name.$t}}</div>
+  <div><label>Description:&nbsp;&nbsp;</label>{{animal.description.$t}}</div>
+</div>

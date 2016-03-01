@@ -5,16 +5,28 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/app.js"
+    "start": "node app.js"
   },
-  "author": "Scott Bromander",
+  "author": "John Ball",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.0",
     "angular-route": "^1.5.0",
+    "body-parser": "^1.15.0",
     "bootstrap": "^3.3.5",
     "express": "^4.13.4",
-    "jquery": "^2.1.4",
-    "path": "^0.11.14"
-  }
+    "jquery": "^2.2.1",
+    "path": "^0.11.14",
+    "pg": "^4.5.1",
+    "pq": "0.0.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndanielball/Pet_finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johndanielball/Pet_finder/issues"
+  },
+  "homepage": "https://github.com/johndanielball/Pet_finder#readme"
 }
